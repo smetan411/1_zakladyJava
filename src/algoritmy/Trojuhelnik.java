@@ -1,8 +1,8 @@
-package vyvojoveDiagramy;
+package algoritmy;
 
 import java.util.Scanner;
 
-public class Vyvoj1 {
+public class Trojuhelnik {
 
     public static void main(String[] args) {
 
@@ -10,7 +10,7 @@ public class Vyvoj1 {
     }
 
 
-    // na vstupu si vyžádejte 3 hodnoty jako strany trojuhelniku
+    // na vstupu si vyžádejte 3 hodnoty jako strany trojuhelnika
     // zjisti, jestli je to trojuhelnik
     // pokud jsou strany vsechny stejne, vypis rovnostranny trojuhelnik
     // pokud jsou 2 strany stejne, vypis rovnoramenny
