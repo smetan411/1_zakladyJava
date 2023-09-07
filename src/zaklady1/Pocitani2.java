@@ -29,7 +29,4 @@ class Pocitani2 {
         System.out.println("podíl: " + podil);
         System.out.println("zbytek po dělení: " + zbytek);
     }
-
-
-
 }
