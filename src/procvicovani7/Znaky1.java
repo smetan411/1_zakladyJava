@@ -5,12 +5,11 @@ import java.util.Scanner;
 public class Znaky1 {
 
     public static void main(String[] args) {
-    // textPozpatku();
-    // textNaopak();
-    // prevedZnakAscii();
-    // najdiPocetZnaku();
-    // sifrujText();
-    //jmenoPozpatku();
+        // textPozpatku();
+        // textNaopak();
+        // prevedZnakAscii();
+        // najdiPocetZnaku();
+        // sifrujText();
     }
 
     public static void textPozpatku() {
@@ -55,7 +54,6 @@ public class Znaky1 {
         System.out.printf("ASCII hodnotu %d jsme převedli na znak %c", i, c);
     }
 
-
     public static void najdiPocetZnaku() {
         String text = "Programátor se zasekne ve sprše, protože instrukce na šampónu byly: Namydlit, omýt, opakovat.";
         System.out.println(text);
@@ -82,7 +80,6 @@ public class Znaky1 {
         System.out.printf("Nepísmenných znaků: %d\n", text.length() - (pocetSamohlasek + pocetSouhlasek));
     }
 
-
     public static void sifrujText() {
         String textKSifrovani = "no nazdar";
         System.out.printf("Původní zpráva: %s\n", textKSifrovani);
@@ -102,18 +99,6 @@ public class Znaky1 {
         }
         // výpis + desifrovat text
         System.out.printf("Zašifrovaná zpráva: %s\n", zasifrovanyText);
-    }
-
-
-    public static void jmenoPozpatku() {
-        String jmeno = "ahoj";
-        System.out.println(jmeno);
-        String jmenoPozpatku = "";
-        for (int i = 0; i < jmeno.length(); i++) {
-            char pismeno = jmeno.charAt(jmeno.length() - 1 - i);
-            jmenoPozpatku += pismeno;
-        }
-        System.out.println(jmenoPozpatku);
     }
 }
 
