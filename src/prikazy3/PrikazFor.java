@@ -15,7 +15,7 @@ public class PrikazFor {
 //        vypisSlovoPozpatku();
     }
 
-    // napiš metodu s názvem s názvem zakladniFor(),
+    // napiš metodu s názvem zakladniFor(),
     // která vypíše na řádek číslice 0 až 10,
     // mezi číslice vlož mezeru
     public static void zakladniFor() {
@@ -51,6 +51,8 @@ public class PrikazFor {
         }
     }
 
+
+    // napiš metodu s názvem velkaNasobilka(), která vypíše výsledky velké násobilky
     public static void velkaNasobilka() {
         for (int i = 11; i < 21; i++) {
             for (int j = 1; j < 11; j++) {
@@ -60,15 +62,12 @@ public class PrikazFor {
         }
     }
 
-
-    // napiš metodu, ktera vypocita faktorial
-    // faktorial cisla n je soucin 1 * 2 * 3 * ....* n
-    // vyzadej si zadani cisla n od uzivatele
-    // pouzij prikazy for a if
+    // napiš metodu, ktera vypocita faktorial čísla n, je to soucin 1 * 2 * 3 * ....* n
+    // vyzadej si zadani cisla n od uzivatele, pouzij prikazy for a if
     // osetri pripad, kdy uzivatel zada faktorial nuly nebo zaporneho cisla
     public static void faktorial() {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Zadejte číslo: ");
+        System.out.print("Zadejte číslo pro výpočet faktoriálu: ");
         int num = sc.nextInt();
         int factorial = 1;
         for (int i = 1; i <= num; i++) {
@@ -112,21 +111,20 @@ public class PrikazFor {
         System.out.println(x + " na " + n + " je " + vysledek);
     }
 
-
-    // napiš metodu s názvem cyklus(), který pomocí scanneru vyžádá od uživatele počet opakování
-    // zadaný počet opakování uloží do proměnné int pocet
-    // na každý řádek zvlášť vypíše: "Průchod cyklem: " + kolikáté je to opakování cyklu
+    // napiš metodu s názvem cyklus(), který si vyžádá od uživatele počet opakování
+    // počet opakování nesmí být větší než sedm, jinak se cyklus předčasně ukončí.
+    // program na každý řádek zvlášť vypíše: "Průchod cyklem: " + kolikáté je to opakování cyklu
     // pokud uživatel zadá příliš velký počet opakování (např. 8), cyklus se ukončí předčasně
     // s výpisem "Cyklus byl ukončen předčasně."
-    // pomůcka - použij příkaz for, předčasné ukončení vytvoř pomocí vnořeného if
-    // další pomůcka: příkaz break ukončí cyklus, příkaz return ukončí metodu
+
     public static void cyklus() {
         System.out.println("Zadej počet opakování cyklu.");
+        System.out.println("Počet opakování nesmí být větší než sedm, jinak se cyklus předčasně ukončí.");
         Scanner sc = new Scanner(System.in);
         int pocet = Integer.parseInt(sc.nextLine());
         // int pocet = sc.nextInt();
         for (int i = 0; i < pocet; i++) {
-            System.out.println("Průchod cyklem: " + i);
+            System.out.println("Průchod cyklem: " + i + ". opakování.");
             if (i > 8) {
                 System.out.println("Cyklus For byl předčasně ukončen.");
                 break;
@@ -135,11 +133,8 @@ public class PrikazFor {
     }
 
     //  napiš metodu s názvem vypisSlovoPozpatku(),
-    //  která si vyžádá od uživatele slovo a uloží ho do proměnné typu String zadaneSlovo
-    //  poté vytvoří proměnnou typu String slovoPozpatku, která zatím neobsahuje žádný znak
     //  pomocí cyklu for vytvoř a vytiskni slovo pozpátku
-    //  pomůcka: typ String metoda .length() rozezná délku zadaného slova
-    //  další pomůcka: písmeno na zadané pozici najdeme pomocí .charAt()
+    //  pomůcka: písmeno na zadané pozici najdeme pomocí .charAt()
     public static void vypisSlovoPozpatku() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Zadejte slovo. Vypisu ho pozpatku.");

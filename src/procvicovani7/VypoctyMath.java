@@ -1,9 +1,8 @@
 package procvicovani7;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class VypoctyMath3 {
+public class VypoctyMath {
     public static void main(String[] args) {
         porovnavani();
         vypisTabulkyASCII();

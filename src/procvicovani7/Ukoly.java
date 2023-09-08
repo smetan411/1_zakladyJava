@@ -2,7 +2,7 @@ package procvicovani7;
 
 import java.util.Scanner;
 
-public class Ukoly1 {
+public class Ukoly {
 
     public static void main(String[] args) {
         vypisCislo();

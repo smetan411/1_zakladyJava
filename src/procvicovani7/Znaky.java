@@ -2,7 +2,7 @@ package procvicovani7;
 
 import java.util.Scanner;
 
-public class Znaky1 {
+public class Znaky {
 
     public static void main(String[] args) {
         // textPozpatku();
