@@ -26,7 +26,7 @@ public class LudolfovoCisloPi {
 //            System.out.println("x:" + x);
             n = n * 2;
             pi = x * n / 2;
-            System.out.println(pi);
+            System.out.println("Cislo pi: " + pi);
 //            System.out.println();
         }
     }

@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 public class Rovnice {
     public static void main(String[] args) {
+
         vypocitejRovnici();
     }
     public static void vypocitejRovnici() {

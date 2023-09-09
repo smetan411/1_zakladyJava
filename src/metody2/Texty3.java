@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Texty3 {
 
     public static void main(String[] args) {
-//         poleZnaku();
+
 //          delkaTextu();
 //          obsahujeZacinaKonci();
 //          jePrazdnyRetezec();
@@ -16,14 +16,7 @@ public class Texty3 {
         porovnejSlovaPodleAbecedy("ahoi","ahoj");
     }
 
-    // text je pole znaku, pole se indexuje od nuly
-    // metoda char.At() vypise pismeno na pozici, metoda neumoznuje menit text, slouzi jen pro cteni
-    // napiste libovolny text a vytisknete pismeno, ktere je na druhem miste
-    public static void poleZnaku() {
-        String text = "Text je pole znaků. Vyzkoušíme to.";
-        System.out.println(text);
-        System.out.println(text.charAt(1));
-    }
+
 
     //  Zadejte nějaký text, ve kterém znáte počet písmen a mezer.
     //  Vytisknete delku textu spolecne se slovnim komentarem.
@@ -94,7 +87,7 @@ public class Texty3 {
     // porovna dva retezce podle abecedy - vraci o kolik pozic jsou znaky ve slovech od sebe
     public static void porovnejSlovaPodleAbecedy(String slovo1, String slovo2) {
         System.out.println(slovo2.compareTo(slovo1));
-        //System.out.println("ahoj".compareTo("ahoi"));
+        System.out.println("ahoj".compareTo("ahoi"));
     }
 
 }

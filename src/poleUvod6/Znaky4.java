@@ -1,15 +1,51 @@
-package procvicovani7;
+package poleUvod6;
 
 import java.util.Scanner;
 
-public class Znaky {
+public class Znaky4 {
 
     public static void main(String[] args) {
+        // poleZnaku();
+        // vypisTabulkyASCII()
+        // prevedZnakAscii();
         // textPozpatku();
         // textNaopak();
-        // prevedZnakAscii();
         // najdiPocetZnaku();
         // sifrujText();
+    }
+
+
+    // text je pole znaku, pole se indexuje od nuly
+    // metoda char.At() vypise pismeno na pozici, metoda neumoznuje menit text, slouzi jen pro cteni
+    // napiste libovolny text a vytisknete pismeno, ktere je na druhem miste
+    public static void poleZnaku() {
+        String text = "Text je pole znaků. Vyzkoušíme to.";
+        System.out.println(text);
+        System.out.println(text.charAt(1));
+    }
+
+
+    //    Vypište tabulku ASCII pro kódy 33 až 255.
+    public static void vypisTabulkyASCII() {
+        System.out.println("Tabulka ASCII:");
+        System.out.println("===============");
+        for (int i = 33; i < 256; i++) {
+            char c = (char) i;
+            System.out.printf(i + " %c \n", c);
+        }
+    }
+
+    public static void prevedZnakAscii() {
+        char c; // znak
+        int i;  // číslo - zde to bude číselná hodnota znaku podle tabulky ASCII
+// převedeme znak na jeho ASCII hodnotu, pozor podle formátování textu printf je %c znak(char), %d celé číslo(int)
+        c = 'a';
+        i = (int) c;
+        System.out.printf("Znak %c jsme převedli na ASCII hodnotu %d\n", c, i);
+        // Převedeme ASCII hodnotu na znak
+        i = 98;
+        c = (char) i;
+        System.out.printf("ASCII hodnotu %d jsme převedli na znak %c", i, c);
     }
 
     public static void textPozpatku() {
@@ -39,19 +75,6 @@ public class Znaky {
             textPozpatku += pismeno[i];
         }
         System.out.println(textPozpatku);
-    }
-
-    public static void prevedZnakAscii() {
-        char c; // znak
-        int i;  // číslo - zde to bude číselná hodnota znaku podle tabulky ASCII
-// převedeme znak na jeho ASCII hodnotu, pozor podle formátování textu printf je %c znak(char), %d celé číslo(int)
-        c = 'a';
-        i = (int) c;
-        System.out.printf("Znak %c jsme převedli na ASCII hodnotu %d\n", c, i);
-        // Převedeme ASCII hodnotu na znak
-        i = 98;
-        c = (char) i;
-        System.out.printf("ASCII hodnotu %d jsme převedli na znak %c", i, c);
     }
 
     public static void najdiPocetZnaku() {

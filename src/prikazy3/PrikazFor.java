@@ -13,6 +13,8 @@ public class PrikazFor {
         nejvetsiSpolDelitel();
 //        cyklus();
 //        vypisSlovoPozpatku();
+//        textPozpatku();
+//        textNaopak();
     }
 
     // napiš metodu s názvem zakladniFor(),
@@ -145,4 +147,6 @@ public class PrikazFor {
         }
         System.out.println("slovo pozpátku: " + slovoPozpatku);
     }
+
+
 }

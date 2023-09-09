@@ -5,9 +5,8 @@ import java.util.Scanner;
 public class VypoctyMath {
     public static void main(String[] args) {
         porovnavani();
-        vypisTabulkyASCII();
         vypocitejRovnici();
-        ludolfovoCislo();
+
     }
 
     //  - metoda si vyžádá od uživatele dvě čísla a porovná jejich velikost a uživateli sdělí které číslo je
@@ -26,19 +25,6 @@ public class VypoctyMath {
 
         }
 
-
-
-
-    //    Vypište tabulku ASCII pro kódy 33 až 255.
-    public static void vypisTabulkyASCII() {
-        System.out.println("Tabulka ASCII:");
-        System.out.println("===============");
-        for (int i = 33; i < 256; i++) {
-            char c = (char) i;
-            System.out.printf(i + " %c "  + "  ", c);
-        }
-        System.out.println();
-    }
 
     public static void vypocitejRovnici() {
 //    Vytvořte program, který si na vstupu vyžádá postupně koeficienty a, b, c kvadratické rovnice ax^2 + bx + c = 0
@@ -71,23 +57,6 @@ public class VypoctyMath {
         }
     }
 
-    public static void ludolfovoCislo() {
-        double n = 6;
-        double x = 1;
-        double pi = x * n / 2;
-        System.out.println(pi);
-        for (int i = 0; i < 30; i++) {
-            System.out.println("iterace:" + i);
-            double v1 = Math.sqrt(1 - (x / 2) * (x / 2));
-            System.out.println("v1:" + v1);
-            double v2 = 1 - v1;
-            System.out.println("v2:" + v2);
-            x = Math.sqrt((x / 2) * (x / 2) + v2 * v2);
-            System.out.println("x:" + x);
-            n = n * 2;
-            pi = x * n / 2;
-            System.out.println("hodnota Pi: " + pi);
-//            System.out.println();
-        }
-    }
+
+
 }

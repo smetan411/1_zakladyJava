@@ -53,6 +53,4 @@ public class TextyRetezce {
         } else System.out.println("Mas strasne dlouhe jmeno.");
     }
 
-
-
 }

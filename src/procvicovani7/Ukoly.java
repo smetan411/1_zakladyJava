@@ -6,12 +6,10 @@ public class Ukoly {
 
     public static void main(String[] args) {
         vypisCislo();
-        vypisTabulkyASCII();
         najdiPalindrom();
         zasifrujText();
         zasifrujText2();
         zasifrujTextHeslem();
-
     }
 
     // Program si vyžádá zadání libovolného písmeme nebo jiného znaku a vytiskne odpovídající číslo podle
@@ -30,15 +28,6 @@ public class Ukoly {
 
     }
 
-    //    Vypište tabulku ASCII pro kódy 33 až 255.
-    public static void vypisTabulkyASCII() {
-        System.out.println("Tabulka ASCII:");
-        System.out.println("===============");
-        for (int i = 33; i < 256; i++) {
-            char c = (char) i;
-            System.out.printf(i + " %c \n", c);
-        }
-    }
 
 
 //    Naprogramujte aplikaci, které zadáte na vstupu textový řetězec a ona zjistí, zda je to palindrom.

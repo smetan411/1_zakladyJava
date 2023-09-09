@@ -7,11 +7,11 @@ class TiskFormatovany4 {
     public static void main(String[] args) {
 
          tiskniCisla();
-        // tiskniDesetinnaCisla();
-        // tiskniPismena();
-        // tiskniStringy();
-        // tiskniPravduNepravdu();
-        // tiskniDatum();
+         tiskniDesetinnaCisla();
+         tiskniPismena();
+         tiskniStringy();
+         tiskniPravduNepravdu();
+         tiskniDatum();
 
     }
 
@@ -53,12 +53,12 @@ class TiskFormatovany4 {
     static void tiskniDatum() {
         Date datum = new Date();          //tc jako time, char
         System.out.printf("Dnesni datum je: %tc\n", datum);
-        System.out.printf("hodiny %tH , minuty %tm, sekundy %tS %n", datum, datum, datum);
+        System.out.printf("hodiny %tH , minuty %tm, sekundy %tS \n", datum, datum, datum);
         System.out.printf("cas %tT\n", datum);
         System.out.printf("den %tA  mesic %tB  rok %tY %n", datum, datum, datum);
     }
 
-    //     Metoda format() umožní vkládat pro tisk do textu značky = procento plus písmeno:
+    //     retezec muzeme formatovat take pomoci metody String.format()
     //     %s  String - text,   %c  char - znak,    %d  celá číslo,  % f   desetinne číslo - float
     public static void tiskniSFormatem() {
         int a = 10;
