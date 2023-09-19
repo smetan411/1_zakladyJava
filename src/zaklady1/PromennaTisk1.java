@@ -18,7 +18,7 @@ class PromennaTisk1 {
         mojeCislo = 50;
         System.out.println(mojeCislo);
 
-        // deklarujte a inicializujte proměnnou a přiřaďte jí hodnotu pro všechny datové typy, které známe
+        // deklarujte a inicializujte proměnné a přiřaďte jim hodnoty pro všechny datové typy, které známe
         // celé číslo, desetinné číslo, text, pravdivostní hodnotu, libovolný znak
         // hodnoty si vymyslete a všechny je vytiskněte
         int celeCislo = 20;

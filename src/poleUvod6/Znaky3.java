@@ -2,7 +2,7 @@ package poleUvod6;
 
 import java.util.Scanner;
 
-public class Znaky4 {
+public class Znaky3 {
 
     public static void main(String[] args) {
         // poleZnaku();
