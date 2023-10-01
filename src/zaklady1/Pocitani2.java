@@ -15,7 +15,7 @@ class Pocitani2 {
 
         //deklarujte dvě celočíselné proměnné a, b, přiřaďte jim hodnoty
         //vyzkoušejte sčítání, odčítání, násobení, celočíselné dělení a zbytek po dělení
-        //výsledky vytiskněte
+        //výsledky vytisknět
         int a = 10;
         int b = 20;
         int soucet = a + b;
