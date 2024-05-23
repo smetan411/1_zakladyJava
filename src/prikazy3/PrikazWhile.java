@@ -21,7 +21,7 @@ public class PrikazWhile {
         }
     }
 
-    // napište další metodu tak, aby vypsala všechna čísla mezi 100 a 1000,
+    // napište další metodu tak, aby vypsala po desitkach všechna čísla mezi 100 a 1000,
     // každou stovku na jeden řádek, použijte k tomu další while
     public static void radaCisel() {
         int i = 101;  //100

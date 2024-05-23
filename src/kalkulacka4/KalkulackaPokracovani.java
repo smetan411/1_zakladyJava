@@ -10,7 +10,7 @@ public class KalkulackaPokracovani {
 
         System.out.println("Zadejte první číslo. ");
         float a = Float.parseFloat(sc.nextLine());
-        System.out.println("Zadejte druhé číslo: ");
+        System.out.println("Zadejte druhé číslo. ");
         float b = Float.parseFloat(sc.nextLine());
         System.out.println("Vyberte: sčítání - 1, odčítání - 2, násobení - 3, dělení - 4 .");
         int volba = Integer.parseInt(sc.nextLine());

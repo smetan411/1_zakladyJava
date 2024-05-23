@@ -18,15 +18,15 @@ public class TernarniOperator {
         int druheCislo = (int) Math.round(Math.random() * 10);
         System.out.println(prvniCislo);
         System.out.println(druheCislo);
-        System.out.println((prvniCislo > druheCislo) ? prvniCislo : druheCislo);
+        System.out.println((prvniCislo >= druheCislo) ? prvniCislo : druheCislo);
     }
 
     // napiste metodu, ktera si vyzada od uzivatele cislo
     // pomoci ternarniho operatoru zjistete, jestli je cislo
-    // vetsi nebo mensi nez vami zadane cislo
-    // a vysledek vytisknete
+    // kladne nebo zaporne nebo nula a vysledek vytisknete
     static void zjistiVelikostCisla() {
         System.out.println("Zadej cislo, zjistim kde lezi na ciselne ose.");
+
         double cislo = Double.parseDouble(new Scanner(System.in).nextLine());
         if (cislo != 0) {
             System.out.println(cislo < 0 ? "Cislo je zaporne" : "Cislo je kladne.");

@@ -4,7 +4,7 @@ public class Porovnavani4 {
 
     public static void main(String[] args) {
 
-        // vytvorte promennou typu boolean mensi
+        // vytvorte promennou typu boolean s nazvem mensi
         // priradte teto promenne ruzne hodnoty tak, aby ukazovala true nebo false
         boolean mensi = 3 < 4;
         System.out.println(mensi);

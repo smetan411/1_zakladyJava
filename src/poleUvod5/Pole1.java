@@ -1,4 +1,4 @@
-package poleUvod6;
+package poleUvod5;
 
 import java.util.Arrays;
 
@@ -6,30 +6,30 @@ public class Pole1 {
     public static void main(String[] args) {
 //       vytvorPoleCisel();
 //       vytvorPoleJmen();
-//       poleCyklem();
+       poleCyklem();
 //       vytvorNahodnePole();
     }
 
-    // vytvorte pole cisel, pole vytiskni
+    // vytvorte pole celych cisel, pole vytisknete
     // mame tri zpusoby jak pole vytisknout - for, foreach, Arrays.toString
     public static void vytvorPoleCisel() {
-        int[] pole = {5, 66, 94, 5, 2, 11, 87, 30, 50};
+        int[] poleCisel = {5, 66, 94, 5, 2, 11, 87, 30, 50};
         //tisk s for
-        for (int i = 0; i < pole.length; i++) {
-            System.out.print(pole[i] + " ");
+        for (int i = 0; i < poleCisel.length; i++) {
+            System.out.print(poleCisel[i] + " ");
         }
         System.out.println();
         // tisk s foreach
-        for (int s : pole) {
-            System.out.print(s + " ");
+        for (int prvekPole : poleCisel) {
+            System.out.print(prvekPole + " ");
         }
         System.out.println();
         // tisk s Arrays.toString()
-        System.out.println(Arrays.toString(pole));
+        System.out.println(Arrays.toString(poleCisel));
     }
 
     //vytvoř pole jmen
-    // seřaď jména podle veliosti a toto pole vytiskni
+    // seřaď jména podle abecedy a toto pole vytiskni
     // způsob tisku si zvol podle předchozího příkladu
     public static void vytvorPoleJmen(){
         String[] jmena = {"Pavel", "Eva", "Hana", "Jitka", "Libor"};
@@ -52,19 +52,19 @@ public class Pole1 {
     // naplńte pole pomocí cyklu tak, aby obsahovala čísle od 1 do 20
     // predvedte tisk spatne a dobre - pomoci foreach a Arrays.toString()
     public static void poleCyklem() {
-        int[] suda = new int[20];
-        for (int i = 0; i < suda.length; i++) {
-            suda[i] = i + 1;
+        int[] cisla = new int[20];
+        for (int i = 0; i < cisla.length; i++) {
+            cisla[i] = i + 1;
         }
         System.out.println("Tisk pole pomoci foreach - dobre");
-        for (int s : suda) {
+        for (int s : cisla) {
             System.out.print(s + " ");
         }
         System.out.println("\nTisk pomoci Arrays.toString() - dobre");
-        System.out.println(Arrays.toString(suda));
+        System.out.println(Arrays.toString(cisla));
 
         System.out.println("\nTisk pole spatne - vytiskne se odkaz na misto v pameti");
-        System.out.println(suda);
+        System.out.println(cisla);
     }
 
     // vytvořte pole deseti celých čísel tak, aby čísla byla náhodná

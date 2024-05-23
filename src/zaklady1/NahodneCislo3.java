@@ -15,16 +15,21 @@ class NahodneCislo3 {
         // vytvorte promennou typu double s nazvem meziNulouAStovkou a priradte do ni nahodne cislo mezi nulou a stovkou, vytisknete ji
         double meziNulouAStovkou = Math.random() * 100;
         System.out.println(meziNulouAStovkou);
+
         // nyni provedte totez ale se zaokrouhlenim na cele cislo
-        System.out.println(Math.round(Math.random() * 100));
+        double zaokrouhleno = Math.round(Math.random() * 100);
+        System.out.println(zaokrouhleno);
+
         // vytisknete nahodne zaokrouhlene cislo mezi nulou a petkou
-        System.out.println(Math.round(Math.random() * 5));
+        double doPeti = Math.round(Math.random() * 5);
+        System.out.println(doPeti);
+
         // pote vytvorte pomoci tisku prazdny radek
         System.out.println();
 
         // vygenerujte hraci kostku, ktera bude hazet cisla od jedne do sesti
+        // přetypujte promennou kostka na int a uložte ji do proměnné kostkaInt
         // vytisknete vysledek hodu se slovnim doprovodem, napr. kostka hodila:
-        // prevedte pritom promennou kostka na celociselnou hodnotu, aby se nezobrazovala desetinna cast
         double kostka = Math.round(Math.random() * 5 + 1);
         int kostkaInt = (int) kostka;
         System.out.println("kostka hodila: " + " " + kostkaInt);

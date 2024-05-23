@@ -1,4 +1,4 @@
-package procvicovani7;
+package procvicovani6;
 
 // vytvor třídu, která vypočítá průměr ze zadaných čísel
 // projedte kod pomoci debug a sledujte stav promennych
@@ -10,7 +10,7 @@ public class PrumerCisel {
         Scanner sc = new Scanner(System.in);
         int pocet = 0;
         double soucet = 0.0;
-        System.out.println("Zadej cisla pro vypocet prumeru.\n Zadani ukonci pismenem.");
+        System.out.println("Zadej cisla pro vypocet prumeru.\n" + "Zadani ukonci pismenem.");
         boolean pokracovani = true;
         while (pokracovani) {
             System.out.println("Zadej cislo: ");
@@ -19,6 +19,7 @@ public class PrumerCisel {
                 soucet += zadaneCislo;
                 pocet++;
             } else {
+
                 pokracovani = false;
             }
         }

@@ -14,7 +14,7 @@ public class PrikazIF {
 
     }
 
-    Scanner sc = new Scanner(System.in);
+
 
     // napiste metodu, ktera vygeneruje dve nahodna desetinna cisla 0 az 100
     // obe vygenerovana cisla vytisknete na dve desetinna cisla

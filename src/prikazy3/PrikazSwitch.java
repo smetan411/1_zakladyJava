@@ -14,7 +14,7 @@ public class PrikazSwitch {
     //vytvořte metodu, která pomocí příkazu switch vypíše do konzoly
     //text k jednotlivým dnům v týdnu, dny v týdnu vyjádřete čísly
     // a vygenerujte toto číslo náhodně 1 - 7
-    //bude stačit odlišit soboru, neděli a vsedniDen
+    //bude stačit odlišit sobotu, neděli a vsedniDen
     //v konzole se objeví text dnes je 5.den tydne, nebo tesim se na vikend.
     static void dnyTydne() {
         int den = (int) (Math.round(Math.random() * 7 + 1));

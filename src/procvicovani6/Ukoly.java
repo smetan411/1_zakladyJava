@@ -1,4 +1,4 @@
-package procvicovani7;
+package procvicovani6;
 
 import java.util.Scanner;
 

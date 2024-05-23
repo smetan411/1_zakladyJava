@@ -9,8 +9,9 @@ public class PrikazFor {
 //        shoraDolu();
 //        nasobilka();
 //        velkaNasobilka();
-//        faktorial();
-        nejvetsiSpolDelitel();
+        faktorial();
+//        vypocetMocniny();
+//        nejvetsiSpolDelitel();
 //        cyklus();
 //        vypisSlovoPozpatku();
 //        textPozpatku();

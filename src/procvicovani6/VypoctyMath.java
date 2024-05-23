@@ -1,16 +1,25 @@
-package procvicovani7;
+package procvicovani6;
 
 import java.util.Scanner;
 
 public class VypoctyMath {
     public static void main(String[] args) {
-        porovnavani();
-        vypocitejRovnici();
+        vypocetPrumeru(5.5, 6.6, 7.7);
+//        porovnavani();
+//        vypocitejRovnici();
 
     }
 
-    //  - metoda si vyžádá od uživatele dvě čísla a porovná jejich velikost a uživateli sdělí které číslo je
-//     větší a o kolik, metodu nazvěte např. porovnavani()
+    public static void vypocetPrumeru(double a, double b, double c){
+        double soucet = a + b + c;
+        int n = 3;
+        double prumer = soucet / n;
+        System.out.println("Prumer zadanych cisel je: " + prumer);
+        System.out.printf("Prumer zadanych cisel je: %.2f\n", prumer);
+    }
+
+    //  metoda si vyžádá od uživatele dvě čísla a porovná jejich velikost a uživateli sdělí které číslo je
+    //     větší a o kolik, metodu nazvěte např. porovnavani()
     public static void porovnavani() {
         Scanner sc = new Scanner(System.in);
         System.out.println("Zadejte první číslo. ");

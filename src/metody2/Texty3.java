@@ -13,9 +13,8 @@ public class Texty3 {
 //         orezText();
 //         nahradSlovo();
 //         vytiskniCastTextu();
-        porovnejSlovaPodleAbecedy("ahoi","ahoj");
+        porovnejSlovaPodleAbecedy("ahoi", "ahoj");
     }
-
 
 
     //  Zadejte nějaký text, ve kterém znáte počet písmen a mezer.
@@ -45,12 +44,9 @@ public class Texty3 {
         String text1 = "";
         String text2 = " ";
         String text3 = "Metoda isEmpty() zjistí, jestli je řetězec prázdný - neobsahuje žádný znak. Pozor, i mezera je znak:";
-        String text4 = null;  //prázdný objekt, žádná hodnota
-
         System.out.println(text1.isEmpty());
         System.out.println(text2.isEmpty());
         System.out.println(text3.isEmpty());
-        System.out.println(text4.isEmpty()); //NullPointException, žádná hodnota - nelze volat metodu, platí pro všechny objekty
     }
 
     //  Uživatel například nakupuje přes internet a má vypsat názvy zboží. Jenže se mu tam vloudí malá a velká
@@ -72,7 +68,6 @@ public class Texty3 {
 
     // Hodně používaná metoda je replace(), nahradí slovo nebo i nekolik slov v testu.
     public static void nahradSlovo() {
-        Scanner sc = new Scanner(System.in);
         String text = "Moje malickost je nejlepsi v programovani.";
         System.out.println(text);
         System.out.println(text.replace("Moje malickost", "Muj tata"));

@@ -11,7 +11,7 @@ public class VolamSebe {
         System.out.println("nejvetsi spolecny delitel pro " + a +
                 " a " + b + " je: " + nejvetsiSpolDelitel(a, b));
 
-        int zaklad = 2, exponent = 3;
+        int zaklad = 2, exponent = 30;
         System.out.println("vypocet mocniny: " + zaklad + "^"
                 + exponent + " = " + mocnina(zaklad, exponent));
     }

@@ -10,7 +10,7 @@ class Ukoly2 {
     }
 
     //    Vytvoř proměnné jmeno, prijmeni typu String. Do těchto proměnných přiřaď své jméno a příjmení.
-    //    Metoda bude mít deklaraci: private static void pozdrav()
+    //    Metoda bude mít hlavičku: private static void pozdrav()
     //    Vypiš pozdrav ve tvaru:
     //    Ahoj, zdravi te {jmeno} {prijmeni}!
     private static void pozdrav() {
@@ -22,12 +22,11 @@ class Ukoly2 {
     //    Vytvoř dvě číselné proměnné pocetMotocyklu a pocetAut. Motocyklu je 20 a aut je o 5 méně.
     //    Vypocitej pocetPneumatik a urci celkovou cenu pneumatik.
     //    Pneumatika pro auto stoji 900,- Kc, pneumatika pro motocykl 600,-Kc.
-    //    Metoda bude mít deklaraci: private static void cenaPneumatik()
-    //    Formát výpisu:
-    //    V autoservisu je {pocetPneumatik} pneumatik a maji celkovou hodnotu {cenaPneumatik} korun.
+    //    Metoda bude mít hlavičku: private static void cenaPneumatik()
+
     private static void cenaPneumatik() {
         int pocetMotocyklu = 20;
-        int pocetAut = pocetMotocyklu + 5;
+        int pocetAut = pocetMotocyklu -5;
         int cenaPneuAuto = 900;
         int cenaPneuMotocyklu = 600;
         int pocetPneumatik = pocetAut * 4 + pocetMotocyklu * 2;
@@ -37,7 +36,7 @@ class Ukoly2 {
 
     //   Naprogramuj jednoduchý převodník hodin na sekundy. Do proměnné pocetHodin přiřaď počet hodin,
     //   který správně převedeš na sekundy a výsledek uložíš do proměnné pocetSekund.
-    //   Metoda bude mít deklaraci: private static void prevodHodinNaSekundy()
+    //   Metoda bude mít hlavičku: private static void prevodHodinNaSekundy()
     //   Formát výpisu:
     //   {pocetHodin} hodin je {pocetSekund} sekund.
     private static void prevodHodinNaSekundy() {

@@ -20,19 +20,19 @@ public class Metody1 {
         int podil = deleni(4, 2);
         System.out.println("podil cisel je: " + podil);
     }
-    static int scitani(int a, int b) {
+    public static int scitani(int a, int b) {
         int c = a + b;
         return c;
     }
-    static int odcitani(int a, int b) {
+    public static int odcitani(int a, int b) {
         int c = a - b;
         return c;
     }
-    static int nasobeni(int a, int b) {
+    public static int nasobeni(int a, int b) {
         int c = a * b;
         return c;
     }
-    static int deleni(int a, int b) {
+    public static int deleni(int a, int b) {
         int c = a / b;
         return c;
     }
