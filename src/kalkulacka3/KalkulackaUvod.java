@@ -1,4 +1,4 @@
-package kalkulacka4;
+package kalkulacka3;
 
 import java.util.Scanner;
 

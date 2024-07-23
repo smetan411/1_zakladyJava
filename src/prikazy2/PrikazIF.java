@@ -1,20 +1,17 @@
-package prikazy3;
+package prikazy2;
 
 import java.util.Scanner;
 
 public class PrikazIF {
 
     public static void main(String[] args) {
-//        porovnejCisla();
-//        porovnejCislaFloat();
-//        porovnejText();
-//        odmocnovani();
-//        leziVrozmezi();
-        porovnejSlova();
+        //      porovnejCisla();
+  //      porovnejText();
+        //odmocnovani();
+ // todo    leziVrozmezi();
+        // todo      porovnejSlova();
 
     }
-
-
 
     // napiste metodu, ktera vygeneruje dve nahodna desetinna cisla 0 az 100
     // obe vygenerovana cisla vytisknete na dve desetinna cisla
@@ -36,7 +33,7 @@ public class PrikazIF {
     static void porovnejText() {
         System.out.println("Napis na dalsi radek text.");
         String text = new Scanner(System.in).nextLine();
-        if (text.length() > 0) {
+        if (!text.isEmpty()) {
             System.out.println("jo, asi je to fakt text: " + text);
         } else System.out.println("V textu neni zadny znak.");
     }
@@ -50,7 +47,7 @@ public class PrikazIF {
         System.out.println("Zadej cislo k odmocneni.");
         double cislo = Double.parseDouble(new Scanner(System.in).nextLine());
         if (cislo > 0) {
-            System.out.printf("Odmocnina cisla %f je %f \n", cislo, Math.sqrt(cislo));
+            System.out.println("Odmocnina cisla " + cislo + " je " + Math.sqrt(cislo));
         } else if (cislo == 0) {
             System.out.println("Zadal jsi nulu, nebudu to pocitat.");
         } else {
@@ -63,18 +60,19 @@ public class PrikazIF {
     // metoda zjisti, jestli zadana cisla lezi v rozmezi 300 a 400
     // zjisti take, jestli cislo lezi na hranici intervalu - tj. rovno 300 nebo 400
     static void leziVrozmezi() {
-        System.out.println("Chces zadavat cisla sam nebo chces generovat automaticky? sam - automaticky");
+        System.out.println("Zadej číslo do 500, řeknu tí, jestli leží mezi 300 a 400.");
+        System.out.println("Chces zadavat sam nebo generovat automaticky? sam - automaticky");
         String rozhodnuti = new Scanner(System.in).nextLine();
         int celeCislo = 0;
         if (rozhodnuti.equals("sam")) {
-            System.out.println("Tak tedy zadej cele cislo mezi minus a plus padesati.");
+            System.out.println("Tak tedy zadej cele cislo mezi nulou a 500.");
             celeCislo = Integer.parseInt(new Scanner(System.in).nextLine());
         } else if (rozhodnuti.equals("automaticky")){
             celeCislo = (int) Math.round(Math.random() * 500);
             System.out.println(celeCislo);
         }
         if (celeCislo >300 && celeCislo < 400) {
-            System.out.println("Cislo lezi v zadanem rozmezi mezi 20 a 40.");
+            System.out.println("Cislo lezi v zadanem rozmezi mezi 300 a 400.");
         }
         else if(celeCislo ==300 || celeCislo== 400){
             System.out.println("Cislo lezi na hranici zadaneho intervalu.");
@@ -101,4 +99,6 @@ public class PrikazIF {
             System.out.println("Obe slova jsou stejne dlouha.");
         } else System.out.println("Druhe slovo je o " + (-rozdilDelkySlova) + " pismen delsi.");
     }
+
+
 }

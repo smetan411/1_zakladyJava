@@ -1,4 +1,4 @@
-package prikazy3;
+package prikazy2;
 
 import java.util.Scanner;
 

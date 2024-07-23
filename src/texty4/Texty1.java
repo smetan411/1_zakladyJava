@@ -1,8 +1,6 @@
-package metody2;
+package texty4;
 
-import java.util.Scanner;
-
-public class Metody1 {
+public class Texty1 {
 
     // vytvorte hlavni metodu s hlavickou  public static void main(String[] args)
     // hlavidku metody si vysvetlete

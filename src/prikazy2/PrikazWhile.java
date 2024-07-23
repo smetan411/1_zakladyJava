@@ -1,4 +1,4 @@
-package prikazy3;
+package prikazy2;
 
 import java.util.Scanner;
 
@@ -8,27 +8,19 @@ public class PrikazWhile {
 //        radaStovek();
 //        radaCisel();
 //        scitaniCisel();
-//        delitele();
-        deliteleSeSouhlasem();
+          delitele();
+//        deliteleSeSouhlasem();
    }
 
-    // napište metodu, která vypíše na řádek číselnou řadu 100, 200 atd. až do 1000
-      public static void radaStovek() {
-        int i = 100;
-        while (i <= 1000) {
-            System.out.print(i + " ");
-            i += 100;
-        }
-    }
-
-    // napište další metodu tak, aby vypsala po desitkach všechna čísla mezi 100 a 1000,
-    // každou stovku na jeden řádek, použijte k tomu další while
-    public static void radaCisel() {
-        int i = 101;  //100
-        while (i <= 1000) {
-            System.out.print(i + " ");
-            if (i % 100 == 0) {
-                System.out.println();
+    // napište metodu, která zjistí celočíselné dělitele libovolného čísla
+    public static void delitele() {
+        System.out.println("Zadej cele cislo.");
+        Scanner sc = new Scanner(System.in);
+        int cislo = sc.nextInt();
+        int i = 1;
+        while (i <= cislo){
+            if(cislo % i == 0){
+                System.out.println(i);
             }
             i++;
         }
@@ -56,19 +48,31 @@ public class PrikazWhile {
         System.out.println("posledni cislo byla nula, tohle cislo nezapocitavam.");
     }
 
-    // napište metodu, která zjistí celočíselné dělitele libovolného čísla
-    public static void delitele() {
-        System.out.println("Zadej cele cislo.");
-        Scanner sc = new Scanner(System.in);
-        int cislo = sc.nextInt();
-        int i = 1;
-        while (i <= cislo){
-            if(cislo % i == 0){
-                System.out.println(i);
+
+
+    // napište metodu, která vypíše na řádek číselnou řadu 100, 200 atd. až do 1000
+      public static void radaStovek() {
+        int i = 100;
+        while (i <= 1000) {
+            System.out.print(i + " ");
+            i += 100;
+        }
+    }
+
+    // napište další metodu tak, aby vypsala po desitkach všechna čísla mezi 100 a 1000,
+    // každou stovku na jeden řádek, použijte k tomu další while
+    public static void radaCisel() {
+        int i = 101;  //100
+        while (i <= 1000) {
+            System.out.print(i + " ");
+            if (i % 100 == 0) {
+                System.out.println();
             }
             i++;
         }
     }
+
+
 
     // vylepšete metodu tak, že po výpisu všech dělitelů se uživatele zeptá,
     // jestli chce pokračovat, použijte další while s proměnnou String souhlas

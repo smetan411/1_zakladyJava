@@ -4,7 +4,8 @@ class Tisk1 {
 
     public static void main(String[] args) {
 
-        // vytvořte proměnnou s názvem mujKamarad a přiřaďte jí jméno kamaráda, vytiskněte jméno kamaráda
+        // vytvořte proměnnou s názvem mujKamarad a přiřaďte jí jméno kamaráda
+        // vytiskněte jméno kamaráda
         // na další řádek vytiskněte stejným způsobem jiného kamaráda
 
         String mujKamarad = "Jan";
@@ -12,7 +13,8 @@ class Tisk1 {
         String jinyKamarad = "Pavel";
         System.out.println(jinyKamarad);
 
-        // vytvořte celočíselnou proměnnou s názvem mojeCislo a přiřaďte jí hodnotu 100, číslo vytiskněte
+        // vytvořte celočíselnou proměnnou s názvem mojeCislo
+        // přiřaďte jí hodnotu 100, číslo vytiskněte
         // změňte velikost čísla a vytiskněte ho vedle prvního čísla na stejný řádek
 
         int mojeCislo = 100;
@@ -20,9 +22,9 @@ class Tisk1 {
         mojeCislo = 50;
         System.out.println(mojeCislo);
 
-        // deklarujte a inicializujte proměnné a přiřaďte jim hodnoty pro všechny datové typy, které známe
+        // vytvořte proměnné pro všechny datové typy, které známe
         // int-celé číslo, double-desetinné číslo, String-text, boolean-true/false, char-libovolný znak
-        // hodnoty si vymyslete a všechny je vytiskněte na řádek
+        // přiřaďte jim nějaké hodnoty a vytiskněte vše na jeden řádek
 
         int celeCislo = 20;
         double desetinneCislo = 333.3;

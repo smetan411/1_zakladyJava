@@ -2,32 +2,33 @@ package zaklady1;
 
 class Pocitani2 {
 
+    // vytvořte dvě celočíselné proměnné a, b a přiřaďte jim nějaké hodnoty
+    // vytiskněte si jejich součet, rozdíl, součin, podíl, zbytek po dělení
+
     public static void main(String[] args) {
-        //vytvořte promennou vek s hodnotou 25 let
-        // vytisknete na radek s textem napr. "Hodnota promenne vek: "
-        int vek = 25;
-        System.out.println("Hodnota promenne vek: " + vek + " let");
-
-        // zmente hodnotu promenne vek napr. na 36 let a
-        // vytisknete na dalsi radek vcetne nejakeho textu
-        vek = 36;
-        System.out.println("Nova hodnota promenne vek: " + vek + " let");
-
-
-        //vytvořte dvě celočíselné proměnné a, b, přiřaďte jim hodnoty
-        //vyzkoušejte sčítání, odčítání, násobení, celočíselné dělení a zbytek po dělení
-        //výsledky vytiskněte
         int a = 10;
-        int b = 20;
+        int b = 25;
+
+        //todo
         int soucet = a + b;
-        int rozdil = a - b;
-        int soucin = a * b;
-        int podil = a / b;
-        int zbytek = a % b;
-        System.out.println("součet: " + soucet);
-        System.out.println("rozdil: " + rozdil);
-        System.out.println("součín: " + soucin);
-        System.out.println("podíl: " + podil);
-        System.out.println("zbytek po dělení: " + zbytek);
+        System.out.println("soucet cisel je: " + soucet);
+        System.out.println("rozcil cisel je: " + (a - b));
+        System.out.println("soucin cisel je: " + (a * b) );
+        System.out.println("podil cisel je: " + (a / b));
+        System.out.println("zbytek po dělení je: " + (a % b));
+
+        System.out.println();
+
+    // nyní vytvořte dvě proměnné s desetinným číslem c, d a přiřaďte jim nějaké hodnoty
+    // vytiskněte si jejich součet, rozdíl, součin, podíl, zbytek po dělení
+
+        double c = 100.65;
+        double d = 25.32;
+
+        System.out.println("soucet cisel je: " + (c + d));
+        System.out.println("rozcil cisel je: " + (c - d));
+        System.out.println("soucin cisel je: " + (c * d) );
+        System.out.println("podil cisel je: " + (c / d));
+
     }
 }

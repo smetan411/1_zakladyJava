@@ -1,8 +1,8 @@
-package metody2;
+package texty4;
 
 import java.util.Scanner;
 
-public class Texty3 {
+public class Texty2 {
 
     public static void main(String[] args) {
 

@@ -1,4 +1,4 @@
-package metody2;
+package texty4;
 
 import java.time.LocalDate;
 import java.time.LocalTime;

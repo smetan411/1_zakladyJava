@@ -1,4 +1,4 @@
-package metody2;
+package procvicovani6;
 
 class Ukoly2 {
 

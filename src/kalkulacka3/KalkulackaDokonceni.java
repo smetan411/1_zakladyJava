@@ -1,23 +1,19 @@
-package kalkulacka4;
+package kalkulacka3;
 
 import java.util.Scanner;
 
 public class KalkulackaDokonceni {
 
     public static void main(String[] args) {
-
         Scanner sc = new Scanner(System.in);
-
         String pokracovat = "ano";
         while (pokracovat.equals("ano")) {
-
             System.out.println("Zadejte první číslo: ");
             float a = Float.parseFloat(sc.nextLine());
             System.out.println("Zadejte druhé číslo: ");
             float b = Float.parseFloat(sc.nextLine());
             System.out.println("Vyberte: sčítání - 1, odčítání - 2, násobení - 3, dělení - 4 .");
             int volba = Integer.parseInt(sc.nextLine());
-
 
             float vysledek = 0;
             switch (volba) {
