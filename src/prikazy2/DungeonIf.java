@@ -6,16 +6,16 @@ import java.util.Scanner;
 public class DungeonIf {
 
     public static void main(String[] args) {
-        DungeonIf dungeonIf = new DungeonIf();
-        monstrum();
-        zivoty();
-        ktereMonstrumJeVetsi();
+        String monstrum1 = monstrum();
+        if (monstrum1 == null) return;
+        String monstrum2 = monstrum();
+        if (monstrum2 == null) return;
+        ktereMonstrumJeVetsi(monstrum1, monstrum2);
     }
-    //porovnami cisel
-    //nahodna cisla
-    //porovnani retezcu
 
-    //nahodna retezcu
+    // vytvořte metodu, která definuje monstrum
+    // do if si napíšeme, která monstra známe
+    // metoda si vyžádá monstrum a zjistí, jestli je to naše monstrum
     static String monstrum()
     {
         System.out.println("Zadej monstrum");
@@ -35,34 +35,24 @@ public class DungeonIf {
         }
     }
 
-    static int zivoty()
-    {
-        String monstrum = monstrum();
-        if (monstrum == null) {
-            System.out.println("Monstrum neexistuje");
-            return 0;
+    static int zivot(String monstrum){
+        if ("vlk".equals(monstrum)) {
+            return 10;
+        } else if ("trpaslik".equals(monstrum)) {
+            return 5;
+        } else {
+            return -1;
         }
-        int zivoty = new Random().nextInt(6) + 1;
-        System.out.println(monstrum + " ma " + zivoty + " zivotu");
-        return zivoty;
     }
 
-    static void ktereMonstrumJeVetsi()
+    static void ktereMonstrumJeVetsi(String monstrumPrvni, String monstrumDruhe)
     {
-        String monstrumPrvni = monstrum();
-        System.out.println("Zadej pocet zivotu pro: " + monstrumPrvni);
-        Scanner sc = new Scanner(System.in);
-        int zivotyProPrivniMosntrum = Integer.parseInt(sc.nextLine());
-
-        String monstrumDruhe = monstrum();
-        System.out.println("Zadej pocet zivotu pro: " + monstrumDruhe);
-        Scanner scdva = new Scanner(System.in);
-        int zivotyProDruheMosntrum = Integer.parseInt(scdva.nextLine());
-
-        if (zivotyProDruheMosntrum > zivotyProPrivniMosntrum) {
+        if (zivot(monstrumPrvni) > zivot(monstrumDruhe)) {
             System.out.println(monstrumPrvni + " je vetsi nez " + monstrumDruhe);
-        } else if (zivotyProDruheMosntrum == zivotyProPrivniMosntrum) {
+        } else if (zivot(monstrumPrvni) == zivot(monstrumDruhe)) {
             System.out.println("Obe monstra jsou stejně velká.");
+        } else {
+            System.out.println(monstrumDruhe + " je vetsi nez " + monstrumPrvni);
         }
     }
 }
