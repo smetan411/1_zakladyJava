@@ -7,7 +7,7 @@ public class PrikazWhile {
     public static void main(String[] args) {
 //        radaStovek();
 //        radaCisel();
-//        scitaniCisel();
+//   scitaniCisel();
           delitele();
 //        deliteleSeSouhlasem();
    }
@@ -20,7 +20,7 @@ public class PrikazWhile {
         int i = 1;
         while (i <= cislo){
             if(cislo % i == 0){
-                System.out.println(i);
+                System.out.print(i + " ");
             }
             i++;
         }
@@ -45,6 +45,7 @@ public class PrikazWhile {
         }
         System.out.println("Celkovy pocet cisel je " + pocet);
         System.out.println("Celkovy soucet cisel je " + soucet);
+        System.out.println("Prumer z techto cisl je " + (soucet/pocet));
         System.out.println("posledni cislo byla nula, tohle cislo nezapocitavam.");
     }
 

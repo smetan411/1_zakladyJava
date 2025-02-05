@@ -2,8 +2,6 @@ package texty4;
 
 public class Texty1 {
 
-    // vytvorte hlavni metodu s hlavickou  public static void main(String[] args)
-    // hlavidku metody si vysvetlete
     // vytvorte ctyri metody pro scitani, odcitani, nasobeni a deleni
     // zavolejte tyto metody z main pro urcite hodnoty parametru a vytisknete vysledky
 

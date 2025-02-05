@@ -5,19 +5,47 @@ import java.util.Scanner;
 public class PrikazSwitch {
 
     public static void main(String[] args) {
-//        dnyTydne();
-//        rozeznamPismena();
+        dnyTydne();
+        rozeznejCíslici();
+        rozeznamPismena();
         doporucimKurz();
         rozeznejSmajliky();
     }
 
-    //vytvořte metodu, která pomocí příkazu switch vypíše do konzoly
-    //text k jednotlivým dnům v týdnu, dny v týdnu vyjádřete čísly
+
+
+    //vytvořte metodu, která pomocí příkazu switch rozezná písmenka
+    // stačí vytvořit pro písmena a až d, ostatní do default
+
+    static void rozeznejCíslici(){
+        System.out.println("Napiš některé z písmen a až d, umím je přečíst.");
+        Scanner sc = new Scanner(System.in);
+        String písmenko = sc.nextLine();
+        switch (písmenko) {
+            case "a":
+                System.out.println("Je to písmenko " + písmenko);
+                break;
+            case "b":
+                System.out.println("Je to písmenko " + písmenko);
+                break;
+            case "c":
+                System.out.println("Je to písmenko " + písmenko);
+                break;
+            case "d":
+                System.out.println("Je to písmenko " + písmenko);
+                break;
+            default:
+                System.out.printf("Není to žádné z požadovaných písmenek.");
+        }
+    }
+
+    // vytvořte metodu, která pomocí příkazu switch vypíše do konzoly
+    // text k jednotlivým dnům v týdnu, dny v týdnu vyjádřete čísly
     // a vygenerujte toto číslo náhodně 1 - 7
-    //bude stačit odlišit sobotu, neděli a vsedniDen
-    //v konzole se objeví text dnes je 5.den tydne, nebo tesim se na vikend.
+    // postačí odlišit sobotu, neděli a vsedniDen
+    // v konzole se objeví text dnes je 5.den tydne, nebo tesim se na vikend.
     static void dnyTydne() {
-        int den = (int) (Math.round(Math.random() * 7 + 1));
+        int den = (int) (Math.round(Math.random() * 6 + 1));
         switch (den) {
             case 6:
                 System.out.println("Dnes je sobota.");
@@ -26,8 +54,45 @@ public class PrikazSwitch {
                 System.out.println("Dnes je nedele.");
                 break;
             default:
-                System.out.printf("Dnes je %d. den tydne, tesim se na vikend.", den);
+                System.out.printf("Dnes je" + den +". den tydne, tesim se na vikend.");
         }
+    }
+
+
+    //    Vytvořte program, který si na vstupu nechá zadat smajlíka.
+//    Následně vypište slovy o jakou emoci se jedná. Rozeznávejte smajlíky:
+//    :-) - "Tvůj smajlík je veselý"
+//    :-( - "Tvůj smajlík je smutný"
+//    :-* - "Tvůj smajlík je zamilovaný"
+//    :-P - "Tvůj smajlík vyplazuje jazyk."
+//    jakýkoli jiný - "Takového smajlíka neznám."
+//Pokud zadaný smajlík nesouhlasí ani s jedním z těchto, program vypíše, že je neznámý. K řešení aplikace použijte konstrukci switch.
+    ///Zamyslete se nad tím, aby program rozeznával smajlíky s nosem i bez nosu.
+    public static void rozeznejSmajliky() {
+
+        System.out.println("Zadej nektereho z nasledujicich smajliku: :-)   :-(   :-*   :-P   ");
+        Scanner sc = new Scanner(System.in);
+        String smajlik = sc.nextLine();
+        switch (smajlik) {
+            case ":-)":
+                System.out.println("Tvuj smajlik je vesely.");
+                break;
+            case ":-(":
+                System.out.println("Tvuj smajlik je smutny.");
+                break;
+            case ":-*":
+                System.out.println("Tvuj smajlik je zamilovany.");
+                break;
+            case ":-P":
+                System.out.println("Tvuj smajlik vyplazuje jazyk.");
+                break;
+            default:
+                System.out.println("Takoveho smajlika neznam.");
+        }
+        boolean obsahuje = smajlik.trim().contains("-");
+        if (obsahuje) {
+            System.out.println("Mas smajlika s nosem.");
+        } else System.out.println("Mas smajlika bez nosu.");
     }
 
     //Vytvořte metodu, pomocí switch metodu, která rozezná, zda jste zadali
@@ -46,7 +111,7 @@ public class PrikazSwitch {
                 System.out.println(pismenoChar + " je samohláska");
                 break;
             default:
-                System.out.println(pismenoChar + " je souhláska.");
+                System.out.println(pismenoChar + " je souhláska");
         }
     }
 
@@ -108,39 +173,6 @@ public class PrikazSwitch {
         }
     }
 
-    public static void rozeznejSmajliky() {
-//    Vytvořte program, který si na vstupu nechá zadat smajlíka.
-//    Následně vypište slovy o jakou emoci se jedná. Rozeznávejte smajlíky:
-//    :-) - "Tvůj smajlík je veselý"
-//    :-( - "Tvůj smajlík je smutný"
-//    :-* - "Tvůj smajlík je zamilovaný"
-//    :-P - "Tvůj smajlík vyplazuje jazyk."
-//    jakýkoli jiný - "Takového smajlíka neznám."
-//Pokud zadaný smajlík nesouhlasí ani s jedním z těchto, program vypíše, že je neznámý. K řešení aplikace použijte konstrukci switch.
-///Zamyslete se nad tím, aby program rozeznával smajlíky s nosem i bez nosu.
-        System.out.println("Zadej nektereho z nasledujicich smajliku: :-)   :-(   :-*   :-P   ");
-        Scanner sc = new Scanner(System.in);
-        String smajlik = sc.nextLine();
-        switch (smajlik) {
-            case ":-)":
-                System.out.println("Tvuj smajlik je vesely.");
-                break;
-            case ":-(":
-                System.out.println("Tvuj smajlik je smutny.");
-                break;
-            case ":-*":
-                System.out.println("Tvuj smajlik je zamilovany.");
-                break;
-            case ":-P":
-                System.out.println("Tvuj smajlik vyplazuje jazyk.");
-                break;
-            default:
-                System.out.println("Takoveho smajlika neznam.");
-        }
-        boolean obsahuje = smajlik.trim().contains("-");
-        if (obsahuje) {
-            System.out.println("Mas smajlika s nosem.");
-        } else System.out.println("Mas smajlika bez nosu.");
-    }
+
 }
 

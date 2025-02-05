@@ -3,10 +3,8 @@ package kalkulacka3;
 import java.util.Scanner;
 
 public class KalkulackaVylepseni {
-
     public static void main(String[] args) {
-
-        Scanner sc = new Scanner(System.in);
+           Scanner sc = new Scanner(System.in);
         System.out.println("Vítejte v kalkulačce.");
         String pokracovat = "ano";
         while (pokracovat.equals("ano")) {
@@ -45,6 +43,5 @@ public class KalkulackaVylepseni {
         }
         System.out.println("Děkuji za použití kalkulačky.");
     }
-
 }
 

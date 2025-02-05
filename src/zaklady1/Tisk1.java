@@ -26,12 +26,13 @@ class Tisk1 {
         // int-celé číslo, double-desetinné číslo, String-text, boolean-true/false, char-libovolný znak
         // přiřaďte jim nějaké hodnoty a vytiskněte vše na jeden řádek
 
-        int celeCislo = 20;
+        int cislicko = 20;
         double desetinneCislo = 333.3;
         String text = "Nojo text.";
         boolean mojePravda = false;
         char znak = 'p';
-        System.out.println(celeCislo + " " + desetinneCislo + " " + text + " " + mojePravda + " " + znak);
+        System.out.println(cislicko + " " + desetinneCislo + " " + text + " " + mojePravda + " " + znak);
+
     }
 }
 

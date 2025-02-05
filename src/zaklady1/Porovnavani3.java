@@ -13,7 +13,7 @@ public class Porovnavani3 {
         System.out.println(5 > 10);
 
         System.out.println();
-        // && znamená a současně, || znamená nebo::
+        // && znamená a současně, || znamená nebo
 
         // vytvořte proměnnou číslo s hodnotou např. 6
         // vytvořte proměnnou typu boolean s názvem podminka

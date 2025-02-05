@@ -32,7 +32,7 @@ public class KalkulackaDokonceni {
             }
 
             if ((volba > 0) && (volba < 5)) {
-                System.out.println("Výsledek:  " + vysledek);
+                System.out.println("Vypocitali jsme:  " + vysledek);
             } else {
                 System.out.println("Neplatné zadání. ");
             }

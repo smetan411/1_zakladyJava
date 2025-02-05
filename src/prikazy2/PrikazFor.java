@@ -9,9 +9,9 @@ public class PrikazFor {
 //        shoraDolu();
 //        nasobilka();
 //        velkaNasobilka();
-        faktorial();
+//        faktorial();
 //        vypocetMocniny();
-//        nejvetsiSpolDelitel();
+        nejvetsiSpolDelitel();
 //        cyklus();
 //        vypisSlovoPozpatku();
 //        textPozpatku();
@@ -88,9 +88,10 @@ public class PrikazFor {
         System.out.print("Zadejte druhé číslo: ");
         int b = scanner.nextInt();
         int vysledek = 1;
-
-        for (int i = 1; i <= a && i <= b; i++) {
-            if (a % i == 0 && b % i == 0) {
+        for (int i = 1; i <= a && i <= b; i++)
+        {
+            if (a % i == 0 && b % i == 0)
+            {
                 vysledek = i;
             }
         }
