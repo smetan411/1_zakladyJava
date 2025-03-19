@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class TernarniOperator {
 
     public static void main(String[] args) {
-//        porovnejCisla();
+//        tiskniVetsi();
 //        zjistiVelikostCisla();
 //        porovnejHeslo();
         porovnejText();

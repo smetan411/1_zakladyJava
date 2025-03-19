@@ -29,10 +29,9 @@ class Tisk1 {
         int cislicko = 20;
         double desetinneCislo = 333.3;
         String text = "Nojo text.";
-        boolean mojePravda = false;
+        boolean skibidy = false;
         char znak = 'p';
-        System.out.println(cislicko + " " + desetinneCislo + " " + text + " " + mojePravda + " " + znak);
-
+        System.out.println(cislicko + " " + desetinneCislo + " " + text + " " + skibidy + " " + znak);
     }
 }
 
